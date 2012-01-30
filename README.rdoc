@@ -1,6 +1,12 @@
 = closest-fibonacci
 
-Description goes here.
+A simple gem which finds the largest integer in the Fibonacci sequence which is less than the one given.
+It assumes only positive integers will be used.
+
+Example:
+
+145.closest_fibonacci => 144
+142.closest_fibonacci => 89
 
 == Contributing to closest-fibonacci
  

@@ -14,11 +14,15 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "closest-fibonacci"
-  gem.homepage = "http://github.com/Casen/closest-fibonacci"
+  gem.name = "closest_fibonacci"
+  gem.homepage = "http://github.com/Casen/closest_fibonacci"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A simple gem which finds the largest integer in the Fibonacci sequence which is less than the one given.}
+  gem.description = %Q{A simple gem which finds the largest integer in the Fibonacci sequence which is less than the one given.
+  Example:
+
+  145.closest_fibonacci => 144
+  142.closest_fibonacci => 89}
   gem.email = "cdubd10@gmail.com"
   gem.authors = ["Casen"]
   # dependencies defined in Gemfile
@@ -44,10 +48,10 @@ task :default => :test
 
 require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
+  version = File.exist?('VERSION') ? File.read('VERSION') : "1.0"
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "closest-fibonacci #{version}"
+  rdoc.title = "closest_fibonacci #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
